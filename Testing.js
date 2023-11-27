@@ -10,8 +10,8 @@ let text=data.toString()
 
 simpleGit()
 .add(["./*"])
-.commit("Testing", { "--date":"2023-11-28", "--allow-empty":""})
-// .push('origin', 'main',(val)=>{ console.log(val)});
+.commit("Testing", { "--date":"2023-11-28"})
+.push('origin', 'main');
 
 // for (let line of text.split("\n")) {
 //     line=line.split(" ")[0].replace("GIT_AUTHOR_DATE=","")
