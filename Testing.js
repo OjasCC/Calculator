@@ -12,6 +12,9 @@ let text=data.toString()
 
 for (let line of text.split("\n")) {
     line=line.split(" ")[0].replace("GIT_AUTHOR_DATE=","")
+    
+    fs.writeFileSync('./Dummy.txt', line);
+
     simpleGit()
     .add(["./*"])
     .commit("Testing", { "--date":line})
